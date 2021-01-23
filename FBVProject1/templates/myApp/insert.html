@@ -1,0 +1,13 @@
+<html>
+{%extends 'myApp/parent.html'%}
+<body>
+{%block for_child%}
+<h1>Insertion Form</h1>
+<form method="post">
+{{form.as_p}}
+{% csrf_token %}
+<input type="Submit" class="btn btn-lg btn-primary" values="Insert Record">
+</form>
+{%endblock%}
+</body>
+</html>
